@@ -15,7 +15,7 @@
     <div class="menu-list ml-4 flex flex-col w-full items-center">
       <a
         href="#"
-        class="relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
+        class="transition duration-400 ease-in-out relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
       >
         <svg
           class="m-auto"
@@ -33,7 +33,7 @@
       </a>
       <a
         href="#"
-        class="relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
+        class="transition duration-300 ease-in-out relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
         >
         <svg
           class="m-auto"
@@ -57,7 +57,7 @@
       </a>
       <a
         href="#"
-        class="relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
+        class="transition duration-300 ease-in-out relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
       >
         <svg
           class="m-auto"
@@ -75,7 +75,7 @@
       </a>
       <a
         href="#"
-        class="relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
+        class="transition duration-300 ease-in-out relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
       >
         <svg
           class="m-auto"
@@ -93,7 +93,7 @@
       </a>
       <a
         href="#"
-        class="relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
+        class="transition duration-300 ease-in-out relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700"
       >
         <svg
           class="m-auto"
@@ -138,8 +138,10 @@ export default {
   fill: #97d8ec;
 }
 
-.menu-list a:hover::after {
+.menu-list a::after {
   content: "";
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
   position: absolute;
   top: 41%;
   left: 90%;
@@ -147,5 +149,9 @@ export default {
   height: 0.85rem;
   border-radius: 50%;
   background-color: #97d8ec;
+}
+
+.menu-list a:hover::after {
+  opacity: 1;
 }
 </style>
