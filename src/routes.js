@@ -1,15 +1,20 @@
-import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Dashboard from './views/Dashboard.vue'
+import Rooms from './views/Rooms.vue'
+import Budget from './views/Budget.vue'
 import NotFound from './views/NotFound.vue'
 
 export const routes = [
   {
     path: '/',
-    component: Home
+    component: Dashboard
   },
   {
-    path: '/about',
-    component: About
+    path: '/rooms',
+    component: Rooms
+  },
+  {
+    path: '/budget',
+    component: Budget
   },
   {
     path: '/404',
@@ -18,5 +23,5 @@ export const routes = [
   {
     path: '/:path(.*)',
     redirect: '/404'
-  },
+  }
 ]
