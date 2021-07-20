@@ -35,6 +35,7 @@ export default defineComponent({
             data: [20, 48, 38, 42, 37, 17, 0],
             backgroundColor: "#eeeef2",
             hoverBackgroundColor: "#6e28d9",
+            borderRadius: 12
           },
         ],
       }
@@ -43,7 +44,7 @@ export default defineComponent({
         plugins: {
           legend: {
             display: false,
-          },
+          }
         },
         scales: {
           yAxis: {
@@ -51,12 +52,12 @@ export default defineComponent({
             ticks: {
               beginAtZero: true,
               callback: (value) => `${value} ${this.type === "brightness" ? "kWh" : "°C"}`,
-            },
-          },
+            }
+          }
         },
         tooltips: {
           enabled: false
-        },
+        }
       }
 
       const chartProperties = {
@@ -68,6 +69,7 @@ export default defineComponent({
       return chartProperties
     }
   },
+  
   mounted() {
     const chart = document.getElementById(this.uid)
     new Chart(chart, this.returnChartData())
