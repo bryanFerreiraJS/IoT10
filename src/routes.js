@@ -6,7 +6,7 @@ import NotFound from './views/NotFound.vue'
 export const routes = [
   {
     path: '/',
-    meta: { title: 'Dashboard' },
+    meta: { title: 'Tableau de bord' },
     component: Dashboard
   },
   {
