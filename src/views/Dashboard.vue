@@ -1,13 +1,12 @@
 <template>
-  <div class="font-medium text-gray-400 mb-5">Dashboard</div>
-  <EconomieTotale />
+  <TotalSavings />
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import EconomieTotale from '@/components/EconomieTotale.vue'
+import TotalSavings from '@/components/TotalSavings.vue'
 
 export default defineComponent({
-  components: { EconomieTotale },
+  components: { TotalSavings }
 })
 </script>

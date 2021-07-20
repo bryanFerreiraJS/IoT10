@@ -1,11 +1,8 @@
 <template>
-  <h1>Budget</h1>
 </template>
 
 <script>
+import { defineComponent } from 'vue'
 
-export default {
-
-}
-
+export default defineComponent({})
 </script>

@@ -1,11 +1,8 @@
 <template>
-  <h1>Rooms</h1>
 </template>
 
 <script>
+import { defineComponent } from 'vue'
 
-export default {
-
-}
-
+export default defineComponent({})
 </script>
