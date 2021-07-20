@@ -10,14 +10,14 @@
         </div>
         <div class="mt-3 w-full">
           <span class="text-xl text-green-400">
-            <span class="text-xl mr-2 text-green-400 clearMargin">+</span>
+            <span class="text-xl mr-2 text-green-400 clear-margin">+</span>
             3%
           </span>
           <span class="text-sm ml-3 text-gray-400">par rapport à la semaine dernière</span>
         </div>
       </div>
 
-      <div class="flex flex-col w-full ml-2 bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl clearMargin EconoTotaleCol2">
+      <div class="flex flex-col w-full ml-2 bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl clear-margin total-savings-col2">
         <h3 class="w-full text-lg text-black-600 font-bold">Budgétaire</h3>
         <div class="mt-3 w-full text-black-600">
           <span class="text-6xl font-bold">1145€</span>
@@ -25,7 +25,7 @@
         </div>
         <div class="mt-3 w-full">
           <span class="text-xl text-green-400">
-            <span class="text-xl mr-2 text-green-400 clearMargin">+</span>
+            <span class="text-xl mr-2 text-green-400 clear-margin">+</span>
             5%
           </span>
           <span class="text-sm ml-3 text-gray-400">par rapport à la semaine dernière</span>
@@ -49,10 +49,10 @@ export default defineComponent({})
     .list-total-savings{
       flex-direction: column;
     }
-    .clearMargin{
+    .clear-margin{
       margin: 0;
     }
-    .EconoTotaleCol2{
+    .total-savings-col2{
       margin-top: 1rem;
     }
   }
