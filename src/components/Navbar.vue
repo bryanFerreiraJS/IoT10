@@ -86,9 +86,9 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue'
 
-}
+export default defineComponent({})
 </script>
 
 <style scoped>
@@ -103,7 +103,7 @@ export default {
 .menu-list a::after {
   content: "";
   opacity: 0;
-  transition: opacity 400ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
   position: absolute;
   top: 41%;
   left: 90%;
