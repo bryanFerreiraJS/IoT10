@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <Navbar/>
-    <main class="ml-24">
+    <main class="ml-24 pr-8 pl-8 pt-11 pb-11">
       <router-view/>
     </main>
   </div>
