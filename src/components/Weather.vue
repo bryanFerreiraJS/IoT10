@@ -6,10 +6,10 @@
         alt=""
       />
     </div>
-    <div class="absolute bottom-20 left-20 uppercase text-white">
-      <span>{{ currentDate }}</span>
-      <span class="text-base">{{ getWeathedescription }}</span>
-      <span class="font-bold text-4xl">{{ getWeathertemp }} °C</span>
+    <div class="absolute bottom-20 left-20 uppercase text-white">      
+      <div>{{ currentDate }}</div>
+      <div class="text-base">{{ getWeathedescription }}</div>
+      <div class="font-bold text-4xl">{{ getWeathertemp }} °C</div>
     </div>
   </div>
 </template>
