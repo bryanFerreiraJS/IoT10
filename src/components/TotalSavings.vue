@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white shadow-lg flex p-4 flex-col rounded-2xl w-3/4">
     <div class="text-2xl text-black-600 font-bold">Economie Totale</div>
-    <div class="mt-2.5 w-full flex listEconoTotale">
+    <div class="mt-2.5 w-full flex list-total-savings">
       <div class="flex flex-col w-full mr-2 bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl">
         <h3 class="w-full text-lg text-black-600 font-bold">Consommation d'énergie</h3>
         <div class="mt-3 w-full text-black-600">
@@ -42,11 +42,11 @@ export default defineComponent({})
 </script>
 
 <style scoped>
-  .listEconoTotale{
+  .list-total-savings{
     flex-direction: row;
   }
   @media screen and (max-width: 830px) {
-    .listEconoTotale{
+    .list-total-savings{
       flex-direction: column;
     }
     .clearMargin{
