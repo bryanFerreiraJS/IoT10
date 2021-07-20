@@ -7,7 +7,7 @@
 import { defineComponent } from 'vue'
 import EconomieTotale from '@/components/EconomieTotale.vue'
 
-  export default defineComponent({
-    components: { EconomieTotale },
-  })
+export default defineComponent({
+  components: { EconomieTotale },
+})
 </script>
