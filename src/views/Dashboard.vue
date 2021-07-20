@@ -7,7 +7,7 @@
 <script>
 import { defineComponent } from 'vue'
 import EconomieTotale from '@/components/EconomieTotale.vue'
-import Weather from '../components/Weather.vue';
+import Weather from '@/components/Weather.vue'
 
 export default defineComponent({
   components: { 
