@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white shadow-lg flex p-4 flex-col rounded-2xl w-3/4">
-    <div class="text-2xl text-black-600 font-bold">Economie Totale</div>
+    <h2 class="text-2xl text-black-600 font-bold">Economie Totale</h2>
     <div class="mt-2.5 w-full flex list-total-savings">
       <div class="flex flex-col w-full mr-2 bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl">
         <h3 class="w-full text-lg text-black-600 font-bold">Consommation d'énergie</h3>
