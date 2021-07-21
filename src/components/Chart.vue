@@ -24,7 +24,7 @@ export default defineComponent({
     returnChartData() {
       const data = {
         labels: [
-          'Lun',s
+          'Lun',
           'Mar',
           'Mer',
           'Jeu',
