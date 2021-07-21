@@ -1,6 +1,6 @@
 <template>
 <Chart
-  class="mr-2 w-3/6"
+  class="mr-2 xl:w-3/6 xl:m-auto"
   type="brightness"
   uid="chart-brightness"
 />
