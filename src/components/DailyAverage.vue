@@ -8,7 +8,6 @@
           <span class='ml-6 text-4xl font-bold clearMargin'>28
             <span class='ml-1 absolute font-light text-base clearMargin'>°C</span>
           </span>
-          
         </div>
         <div class='flex items-start justify-center pl-5 border-l mt-3 w-full MoyenneQuotCol2'>
           
