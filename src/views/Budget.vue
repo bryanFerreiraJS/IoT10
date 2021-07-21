@@ -1,18 +1,16 @@
 <template>
-<div class="flex">
-  <SavingBudget />
-  <Saving />
-</div>
-
+<Saving />
+<Performance />
 </template>
 
 <script>
 import { defineComponent } from 'vue';
 import SavingBudget from '@/components/SavingsBudget.vue';
 import Saving from '@/components/Savings.vue';
+import Performance from '@/components/Performance.vue';
 
 export default defineComponent({
-     components: { SavingBudget,Saving}
+     components: { SavingBudget,Saving,Performance}
 })
 </script>
 <style scoped>
