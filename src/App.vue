@@ -1,8 +1,8 @@
 <template>
-  <div class="flex">
+  <div class='flex'>
     <Navbar/>
-    <main class="ml-24 px-8 py-11">
-      <h1 class="font-medium text-gray-400 mb-5">{{ $route.meta.title }}</h1>
+    <main class='ml-24 px-8 py-11'>
+      <h1 class='font-medium text-gray-400 mb-5'>{{ $route.meta.title }}</h1>
       <router-view/>
     </main>
   </div>
