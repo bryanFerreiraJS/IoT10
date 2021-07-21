@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full mr-2 bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl">
+  <div class="flex flex-col w-full bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl chart">
     <span>
       <h3 class="w-full text-lg text-black-600 font-bold">
         {{ type === "brightness" ? "Luminosité" : "Température" }}
@@ -76,3 +76,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped>
+  .chart{
+    width: 100%;
+  }
+</style>

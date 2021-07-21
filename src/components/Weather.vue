@@ -4,9 +4,10 @@
       <img
         :src="'src/assets/images/weather/day/' + currentWeather + '.png '"
         alt=""
+        class="ml-5"
       />
     </div>
-    <div class="absolute bottom-20 left-20 uppercase text-white">      
+    <div class="absolute bottom-3 left-11 uppercase text-white">      
       <div>{{ currentDate }}</div>
       <div class="text-base">{{ getWeathedescription }}</div>
       <div class="font-bold text-4xl">{{ getWeathertemp }} °C</div>
@@ -51,5 +52,16 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
+  img{
+    width: 16.4rem;
+  }
+  @media screen and (max-width: 1100px) {
+    img{
+      width: auto;
+      height: 35rem;
+      margin-left: 0;
+      margin-top: 0.875rem;
+    }
+  }
 </style>

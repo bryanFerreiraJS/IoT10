@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow-lg flex mt-3.5 p-4 flex-col rounded-2xl w-3/4">
+  <div class="bg-white shadow-lg flex mt-3.5 p-4 flex-col rounded-2xl w-full">
     <h2 class="text-2xl text-black-600 font-bold">Moyenne quotidienne</h2>
     <div class="mt-2.5 w-full flex listMoyenneQuot">
       <div class="flex w-full bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl moyenneQuotTemp">
