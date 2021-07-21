@@ -13,6 +13,3 @@ export default defineComponent({
   components: { Chart }
 })
 </script>
-<style scoped>
-
-</style>
