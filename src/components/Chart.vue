@@ -60,7 +60,7 @@ export default defineComponent({
             position: 'right',
             ticks: {
               beginAtZero: true,
-              callback: (value) => `${value} ${this.type === 'brightness' ? 'kWh' : '°C'}`,    
+              callback: (value) => `${value} ${this.type === 'brightness' ? 'kWh' : '°C'}`, 
             }
           }
         },
