@@ -26,13 +26,16 @@ export default defineComponent({
   .list-dashboard-items{
     flex-direction: row;
   }
-  .col-1{
-    width: 75%;
+
+  @media screen and (min-width: 1024px) {
+    .col-1{
+      width: 60%;
+    }
+    .col-2{
+      width: 40%;
+    }
   }
-  .col-2{
-    width: 25%;
-  }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1023px) {
     .list-dashboard-items{
       flex-direction: column;
     }
