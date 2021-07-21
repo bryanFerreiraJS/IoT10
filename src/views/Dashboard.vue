@@ -19,13 +19,14 @@ import TotalSavings from '@/components/TotalSavings.vue'
 import DailyAverage from '@/components/DailyAverage.vue'
 import Performances from '@/components/Performances.vue'
 import Weather from '@/components/Weather.vue'
+
 export default defineComponent({
   components: { TotalSavings, DailyAverage, Performances, Weather }
 })
 </script>
 
 <style scoped>
-.list-dashboard-items{
+.list-dashboard-items {
   flex-direction: row;
 }
 
@@ -33,6 +34,7 @@ export default defineComponent({
   .col-1{
     width: 60%;
   }
+
   .col-2{
     width: 40%;
   }
@@ -42,10 +44,8 @@ export default defineComponent({
   .list-dashboard-items{
     flex-direction: column;
   }
-  .col-1{
-    width: 100%;
-  }
-  .col-2{
+
+  .col-1, .col-2{
     width: 100%;
   }
 }

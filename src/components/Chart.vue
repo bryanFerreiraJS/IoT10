@@ -5,7 +5,7 @@
         {{ returnTitle }}
       </h3>
     </span>
-    <div class="canvas-container w-full h-full">
+    <div class='canvas-container w-full h-full'>
       <canvas :id='uid'></canvas>
     </div>
   </div>
@@ -24,7 +24,7 @@ export default defineComponent({
     returnChartData() {
       const data = {
         labels: [
-          'Lun',
+          'Lun',s
           'Mar',
           'Mer',
           'Jeu',
