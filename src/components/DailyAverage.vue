@@ -8,7 +8,6 @@
           <span class='ml-6 text-4xl font-bold clearMargin'>28
             <span class='ml-1 absolute font-light text-base clearMargin'>°C</span>
           </span>
-          
         </div>
         <div class='flex items-start justify-center pl-5 border-l mt-3 w-full MoyenneQuotCol2'>
           
@@ -19,7 +18,6 @@
           <div class='text-sm ml-3 text-gray-400 clearMargin'>par rapport à la semaine dernière</div>
         </div>
       </div>
-
       <div class='flex flex-row w-full bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl moyenneQuotCons'>
         <div class='w-full flex items-center justify-start mt-3 text-black-600 MoyenneQuotCol'>
           <img src='@/assets/images/logo_consommation.png'>
