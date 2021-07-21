@@ -1,8 +1,8 @@
 <template>
 <Chart
   class="mr-2 xl:w-3/6 xl:m-auto"
-  type="brightness"
-  uid="chart-brightness"
+  type='performance'
+  uid="chart-performance"
 />
 </template>
 <script>

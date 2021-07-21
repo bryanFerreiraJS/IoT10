@@ -1,8 +1,14 @@
 <template>
   <div class='flex flex-col w-full mr-2 bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl'>
     <span>
-      <h3 class='w-full text-lg text-black-600 font-bold'>
-        {{ type === 'brightness' ? 'Luminosité' : 'Température' }}
+      <h3 class='w-full text-lg text-black-600 font-bold' v-if="type === 'brightness'">
+        {{ 'Luminosité' }}
+      </h3>
+      <h3 class='w-full text-lg text-black-600 font-bold' v-else-if="type === 'temperature'">
+        {{ 'Température'  }}
+      </h3>
+      <h3 class='w-full text-lg text-black-600 font-bold' v-if="type === 'performance'">
+        {{ 'Performance'  }}
       </h3>
     </span>
     <canvas :id='uid'></canvas>
@@ -54,7 +60,7 @@ export default defineComponent({
             position: 'right',
             ticks: {
               beginAtZero: true,
-              callback: (value) => `${value} ${this.type === 'brightness' ? 'kWh' : '°C'}`,
+              callback: (value) => `${value} ${this.type === 'brightness' ? 'kWh' : '°C'}`,    
             }
           }
         },
