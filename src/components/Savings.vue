@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white shadow-lg flex p-4 flex-col rounded-2xl w-4/4 w-full ml-4">
+    <div class="bg-white shadow-lg flex p-4 flex-col rounded-2xl w-4/4 w-full ml-0 lg:ml-4 mt-4 lg:mt-0">
     <h2 class="text-2xl text-black-600 font-bold">Economie</h2>
     <div class="mt-2.5 w-full flex list-total-savings">
       <div class="flex flex-col w-full mr-2 bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl">

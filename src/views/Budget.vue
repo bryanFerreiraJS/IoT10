@@ -16,7 +16,7 @@ export default defineComponent({
 })
 </script>
 <style scoped>
-  @media screen and (max-width: 1040px) {
+  @media screen and (max-width: 1024px) {
     .flex{
       flex-direction: column;
     }
