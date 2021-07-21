@@ -18,7 +18,6 @@
           <div class='text-sm ml-3 text-gray-400 clearMargin'>par rapport à la semaine dernière</div>
         </div>
       </div>
-
       <div class='flex flex-row w-full bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl moyenneQuotCons'>
         <div class='w-full flex items-center justify-center mt-3 text-black-600 MoyenneQuotCol'>
           <img src='@/assets/images/logo_consommation.png'>
