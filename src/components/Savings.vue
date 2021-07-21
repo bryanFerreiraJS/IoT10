@@ -19,7 +19,6 @@
           <span class="text-sm ml-3 text-gray-400">par rapport à la semaine dernière</span>
         </div>
       </div>
-
       <div class="flex flex-col w-full bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl clear-margin total-savings-col2">
         <div class="flex w-full">
             <img src="@/assets/images/logo_consommation_2.png" alt="">
