@@ -3,12 +3,12 @@
     <h3 class='w-full text-lg text-black-600 font-bold'>Performances</h3>
     <div class='mt-2.5 w-full flex flex-row justify-center performance'>
       <Chart
-        class='mr-2'
+        class='mx-2'
         type='brightness'
         uid='chart-brightness'
       />
       <Chart
-        class='md:ml-2 sm:mt-3.5 md:mt-0'
+        class='mx-2'
         type='temperature'
         uid='chart-temperature'
       />
