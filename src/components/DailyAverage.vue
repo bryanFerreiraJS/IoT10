@@ -3,7 +3,7 @@
     <h2 class='text-2xl text-black-600 font-bold'>Moyenne quotidienne</h2>
     <div class='mt-2.5 w-full flex listMoyenneQuot'>
       <div class='flex w-full bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl moyenneQuotTemp'>
-        <div class='w-full flex flex-row items-center justify-center mt-3 text-black-600 MoyenneQuotCol'>
+        <div class='w-full flex flex-row items-center justify-start mt-3 text-black-600 MoyenneQuotCol'>
           <img src='@/assets/images/logo_temperature.png'>
           <span class='ml-6 text-4xl font-bold clearMargin'>28
             <span class='ml-1 absolute font-light text-base clearMargin'>°C</span>
@@ -21,7 +21,7 @@
       </div>
 
       <div class='flex flex-row w-full bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl moyenneQuotCons'>
-        <div class='w-full flex items-center justify-center mt-3 text-black-600 MoyenneQuotCol'>
+        <div class='w-full flex items-center justify-start mt-3 text-black-600 MoyenneQuotCol'>
           <img src='@/assets/images/logo_consommation.png'>
           <span class='ml-6 text-4xl font-bold clearMargin'>32.19</span>
           <span class='ml-1 -mt-5 text-base clearMargin'>kWh</span>

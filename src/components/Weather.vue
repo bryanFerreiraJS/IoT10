@@ -1,23 +1,23 @@
 <template>
-  <div class="relative">
-    <div v-if="currentWeather">
+  <div class='relative'>
+    <div v-if='currentWeather'>
       <img
         :src="'src/assets/images/weather/day/' + currentWeather + '.png '"
-        alt=""
-        class="ml-5"
+        alt=''
+        class='ml-5'
       />
     </div>
-    <div class="absolute bottom-3 left-11 uppercase text-white">      
+    <div class='absolute bottom-3 left-11 uppercase text-white'>      
       <div>{{ currentDate }}</div>
-      <div class="text-base">{{ getWeathedescription }}</div>
-      <div class="font-bold text-4xl">{{ getWeathertemp }} °C</div>
+      <div class='text-base'>{{ getWeathedescription }}</div>
+      <div class='font-bold text-4xl'>{{ getWeathertemp }} °C</div>
     </div>
   </div>
 </template>
 <script>
-import axios from "axios";
+import axios from 'axios';
 export default {
-  name: "Weather",
+  name: 'Weather',
   data() {
     return {
       getWeathertemp: null,
@@ -30,10 +30,10 @@ export default {
   methods: {
     returnCurrentDate() {
       const current = new Date();
-      const dateLocale = current.toLocaleString("fr-FR", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
+      const dateLocale = current.toLocaleString('fr-FR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
       });
       return dateLocale;
     },
@@ -41,7 +41,7 @@ export default {
   mounted() {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/weather?q=Montreuil&units=metric&lang=fr&appid=4905eac944022ae6bb02d2b49f21a9c7"
+        'https://api.openweathermap.org/data/2.5/weather?q=Montreuil&units=metric&lang=fr&appid=4905eac944022ae6bb02d2b49f21a9c7'
       )
       .then((reponse) => {
         this.getWeathertemp = reponse.data.main.temp.toFixed();
@@ -54,7 +54,7 @@ export default {
 </script>
 <style scoped>
   img{
-    width: 16.4rem;
+    width: 18.4rem;
   }
   @media screen and (max-width: 1100px) {
     img{

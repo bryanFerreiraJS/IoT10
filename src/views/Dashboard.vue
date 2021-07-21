@@ -1,10 +1,10 @@
 <template>
-<div class="flex h-auto items-center justify-center list-dashboard-items">
-  <div class="col-1">
+<div class='flex h-auto items-center justify-center list-dashboard-items'>
+  <div class='col-1'>
     <TotalSavings />
     <DailyAverage />
   </div>
-  <div class="col-2 flex h-auto items-center justify-center">
+  <div class='col-2 flex h-auto items-center justify-center'>
     <Weather />
   </div>
 </div>
@@ -26,7 +26,6 @@ export default defineComponent({
   .list-dashboard-items{
     flex-direction: row;
   }
-
   @media screen and (min-width: 1024px) {
     .col-1{
       width: 60%;
