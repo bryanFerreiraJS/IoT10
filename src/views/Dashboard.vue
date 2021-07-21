@@ -1,8 +1,14 @@
 <template>
-  <TotalSavings />
-  <DailyAverage />
+<div class="flex h-auto items-center justify-center list-dashboard-items">
+  <div class="col-1">
+    <TotalSavings />
+    <DailyAverage />
+  </div>
+  <div class="col-2 flex h-auto items-center justify-center">
+    <Weather />
+  </div>
+</div>
   <Performances />
-  <Weather />
 </template>
 
 <script>
@@ -15,3 +21,26 @@ export default defineComponent({
   components: { TotalSavings, DailyAverage, Performances, Weather }
 })
 </script>
+
+<style scoped>
+  .list-dashboard-items{
+    flex-direction: row;
+  }
+  .col-1{
+    width: 75%;
+  }
+  .col-2{
+    width: 25%;
+  }
+  @media screen and (max-width: 1100px) {
+    .list-dashboard-items{
+      flex-direction: column;
+    }
+    .col-1{
+      width: 100%;
+    }
+    .col-2{
+      width: 100%;
+    }
+  }
+</style>
