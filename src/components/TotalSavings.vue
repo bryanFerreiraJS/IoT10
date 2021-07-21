@@ -16,7 +16,6 @@
           <span class='text-sm ml-3 text-gray-400'>par rapport à la semaine dernière</span>
         </div>
       </div>
-
       <div class='flex flex-col w-full ml-2 bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl clear-margin total-savings-col2'>
         <h3 class='w-full text-lg text-black-600 font-bold'>Budgétaire</h3>
         <div class='mt-3 w-full text-black-600'>
