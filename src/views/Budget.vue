@@ -1,6 +1,6 @@
 <template>
 <div id="budget" class="h-screen">
-  <Saving class='h-2/5' />
+  <Saving />
   <Chart
     class='h-3/5'
     type='performance'
