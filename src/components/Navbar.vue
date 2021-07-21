@@ -36,7 +36,7 @@
         </svg>
       </router-link>
       <router-link
-        to='/Rooms'
+        to='/rooms'
         class='transition duration-400 ease-in-out relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700'
       >
         <svg
@@ -54,7 +54,7 @@
         </svg>
       </router-link>
       <router-link
-        to='/Budget'
+        to='/budget'
         class='transition duration-400 ease-in-out relative w-full p-4 pl-0 my-1 text-gray-500 rounded-l-lg hover:text-blue-500  hover:bg-purple-700'
       >
         <svg

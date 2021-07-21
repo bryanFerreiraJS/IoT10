@@ -48,12 +48,8 @@ export default defineComponent({})
     flex-direction: row;
   }
 
-  .moyenneQuotTemp{
-    margin-right: 0.5rem;
-  }
-
-  .moyenneQuotCons{
-    margin-left: 0.5rem;
+  .moyenneQuotTemp, .moyenneQuotCons{
+    margin: 0 0.5rem;
   }
 
   .moyenneQuotConsSem{
@@ -73,11 +69,10 @@ export default defineComponent({})
       flex-direction: column;
     }
     .moyenneQuotTemp{
-      margin-right: 0;
+      margin: 0;
     }
     .moyenneQuotCons{
-      margin-left: 0;
-      margin-top: 1rem;
+      margin: 1rem 0 0 0;
     }
     .moyenneQuotConsSem{
       width: 100%;

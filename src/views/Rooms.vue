@@ -1,4 +1,6 @@
 <template>
+<div id='rooms'>
+</div>
 </template>
 
 <script>

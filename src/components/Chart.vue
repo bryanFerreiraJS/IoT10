@@ -1,17 +1,13 @@
 <template>
   <div class='flex flex-col w-full bg-white shadow-md p-4 items-center justify-center text-left rounded-2xl chart'>
     <span>
-      <h3 class='w-full text-lg text-black-600 font-bold' v-if="type === 'brightness'">
-        {{ 'Luminosité' }}
-      </h3>
-      <h3 class='w-full text-lg text-black-600 font-bold' v-else-if="type === 'temperature'">
-        {{ 'Température'  }}
-      </h3>
-      <h3 class='w-full text-lg text-black-600 font-bold' v-if="type === 'performance'">
-        {{ 'Performance'  }}
+      <h3 class='w-full text-lg text-black-600 font-bold'>
+        {{ returnTitle }}
       </h3>
     </span>
-    <canvas :id='uid'></canvas>
+    <div class="canvas-container w-full h-full">
+      <canvas :id='uid'></canvas>
+    </div>
   </div>
 </template>
 
@@ -47,6 +43,8 @@ export default defineComponent({
       }
 
       const options = {
+        responsive: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: {
             display: false,
@@ -60,7 +58,21 @@ export default defineComponent({
             position: 'right',
             ticks: {
               beginAtZero: true,
-              callback: (value) => `${value} ${this.type === 'brightness' ? 'kWh' : '°C'}`, 
+              callback: (value) => {
+                let unit = ''
+                switch (this.type) {
+                  case 'brightness':
+                    unit = 'kWh'
+                    break
+                  case 'temperature':
+                    unit = '°C'
+                    break
+                  case 'performance':
+                    unit = '€'
+                    break
+                }
+                return `${value} ${unit}`
+              }, 
             }
           }
         },
@@ -76,6 +88,19 @@ export default defineComponent({
       }
 
       return chartProperties
+    }
+  },
+
+  computed: {
+    returnTitle: function() {
+      switch (this.type) {
+        case 'brightness':
+          return 'Luminosité'
+        case 'temperature':
+          return 'Température'
+        case 'performance':
+          return 'Performance'
+      }
     }
   },
   
