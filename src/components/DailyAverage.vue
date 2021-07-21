@@ -70,7 +70,7 @@ export default defineComponent({})
     flex-direction: column;
   }
 
-  @media screen and (max-width: 1270px) {
+  @media screen and (max-width: 1552px) {
     .listMoyenneQuot{
       flex-direction: column;
     }
