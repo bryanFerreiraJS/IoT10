@@ -1,8 +1,24 @@
 <template>
+<div class="flex">
+  <SavingBudget />
+  <Saving />
+</div>
+
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
+import SavingBudget from '@/components/SavingsBudget.vue';
+import Saving from '@/components/Savings.vue';
 
-export default defineComponent({})
+export default defineComponent({
+     components: { SavingBudget,Saving}
+})
 </script>
+<style scoped>
+  @media screen and (max-width: 1040px) {
+    .flex{
+      flex-direction: column;
+    }
+  }
+</style>
