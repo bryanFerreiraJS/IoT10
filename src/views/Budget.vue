@@ -1,6 +1,6 @@
 <template>
-<div id="budget" class="h-screen">
-  <Saving />
+<div id='budget' class='h-screen'>
+  <Savings />
   <Chart
     class='h-3/5'
     type='performance'
@@ -11,11 +11,11 @@
 
 <script>
 import { defineComponent } from 'vue'
-import Saving from '@/components/Savings.vue'
+import Savings from '@/components/Savings.vue'
 import Chart from '@/components/Chart.vue'
 
 export default defineComponent({
-  components: { Saving, Chart }
+  components: { Savings, Chart }
 })
 </script>
 

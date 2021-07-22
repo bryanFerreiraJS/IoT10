@@ -1,10 +1,12 @@
 <template>
-<div id='rooms'>
-</div>
+  <RoomInformations />
 </template>
 
 <script>
 import { defineComponent } from 'vue'
+import RoomInformations from '@/components/RoomInformations.vue'
 
-export default defineComponent({})
+export default defineComponent({
+  components: { RoomInformations }
+})
 </script>
