@@ -112,7 +112,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-  .chart{
-    width: 100%;
-  }
+.chart {
+  width: 100%;
+}
 </style>

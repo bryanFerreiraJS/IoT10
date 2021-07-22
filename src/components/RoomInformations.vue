@@ -3,27 +3,27 @@
     <div class='w-full h-full py-2 mx-auto bg-purple-100 hover:bg-purple-200 shadow-lg rounded-2xl flex flex-col items-center container-room'>
       <Disclosure v-slot='{ open }'>
         <DisclosureButton
-          @click='isOpen = !isOpen' class=' w-full flex justify-between items-center text-black-600 px-8 text-sm font-medium text-left focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 disclosure-close'
+          @click='isOpen = !isOpen' class='w-full flex justify-between items-center text-black-600 px-8 text-sm font-medium text-left focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 disclosure-close'
         >
           <img src='@/assets/images/location_boxed.png'>
           <span class='text-2xl font-bold'>
-            Salle 204
+            Salle {{ room.id }}
           </span>
-          <div class='flex flex-row items-center'>
-            <img src='@/assets/images/sun.png'>
-            <span class='text-sm ml-4 text-gray-400 display-none'>En cours d'utilisation</span>
+          <div class='w-40 flex flex-row items-center center'>
+            <img :src="`src/assets/images/${room.isOpen ? 'sun' : 'moon'}.png`">
+            <span class='text-sm ml-4 text-gray-400 display-none'>{{ room.isOpen ? "en cours d'utilisation" : 'inutilisé' }}</span>
           </div>
           <div class='flex h-full pl-9 flex-row items-center disclosure-temperature'>
             <img src='@/assets/images/temperature.png'>
             <span class='text-lg ml-4'>
               <span class='display-none'>Température : </span>
-              <span class='font-bold'>28°C</span>
+              <span class='font-bold'>{{ room.temperature }}°C</span>
             </span>
           </div>
-          <div class='flex flex-row items-center'>
+          <div class='w-40 flex flex-row items-center'>
             <img src='@/assets/images/consumption.png'>
             <span class='text-lg ml-4'><span class='display-none'>Lumière : </span>
-              <span class='font-bold'>basse</span>
+              <span class='font-bold'>{{ getLightIntensity }}</span>
             </span>
           </div>
           <span 
@@ -82,12 +82,12 @@
                 <Chart
                   class='mr-2 rounded-b-2xl'
                   type='temperature'
-                  uid='chart-temperature'
+                  :uid='`chart-temperature-room${room.id}`'
                 />
                 <Chart
                   class='ml-2 rounded-b-2xl'
                   type='brightness'
-                  uid='chart-brightness'
+                  :uid='`chart-brightness-room${room.id}`'
                 />
               </div>
             </div>
@@ -106,6 +106,7 @@ import Chart from '@/components/Chart.vue'
 import DailyAverage from '@/components/DailyAverage.vue'
 
 export default defineComponent({
+  props: ['room'],
   components: {
     Disclosure,
     DisclosureButton,
@@ -119,6 +120,19 @@ export default defineComponent({
       isOpen: false
     }
   },
+  computed: {
+    getLightIntensity() {
+      switch (this.room.lightIntensity) {
+        case 'low':
+          return 'basse'
+        case 'regular':
+          return 'moyenne'
+        case 'high':
+          return 'élevé'
+      }
+      return `${value} ${unit}`
+    }
+  }
 })
 </script>
 
@@ -150,6 +164,10 @@ export default defineComponent({
 @media screen and (max-width: 1180px) {
   .display-none {
     display: none;    
+  }
+
+  .center {
+    justify-content: center;
   }
 
   .container {

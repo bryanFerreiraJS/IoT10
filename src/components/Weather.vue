@@ -2,7 +2,7 @@
   <div class='relative'>
     <div v-if='currentWeather'>
       <img
-        :src="'src/assets/images/weather/'+ (isDay ? 'day' : 'night') + '/' + currentWeather + '.png'"
+        :src="`src/assets/images/weather/${isDay ? 'day' : 'night'}/${currentWeather}.png`"
         alt='Image de la météo actuelle'
         class='ml-5'
       />

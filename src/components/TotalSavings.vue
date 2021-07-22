@@ -41,18 +41,21 @@ export default defineComponent({})
 </script>
 
 <style scoped>
+.list-total-savings{
+  flex-direction: row;
+}
+
+@media screen and (max-width: 830px) {
   .list-total-savings{
-    flex-direction: row;
+    flex-direction: column;
   }
-  @media screen and (max-width: 830px) {
-    .list-total-savings{
-      flex-direction: column;
-    }
-    .clear-margin{
-      margin: 0;
-    }
-    .total-savings-col2{
-      margin-top: 1rem;
-    }
+
+  .clear-margin{
+    margin: 0;
   }
+  
+  .total-savings-col2{
+    margin-top: 1rem;
+  }
+}
 </style>
