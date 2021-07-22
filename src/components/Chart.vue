@@ -92,7 +92,7 @@ export default defineComponent({
   },
 
   computed: {
-    returnTitle: function() {
+    returnTitle() {
       switch (this.type) {
         case 'brightness':
           return 'Luminosité'

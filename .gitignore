@@ -5,3 +5,8 @@ dist-ssr
 *.local
 debug.log
 .idea
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production

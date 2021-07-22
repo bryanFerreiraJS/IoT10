@@ -45,9 +45,10 @@ export default {
       return now >= sunrise && now <= sunset
     },
     axiosData() {
+      const WEATHER_API_KEY = process.env.VUE_APP_WEATHER_API_KEY
       axios
         .get(
-          'https://api.openweathermap.org/data/2.5/weather?q=Montreuil&units=metric&lang=fr&appid=4905eac944022ae6bb02d2b49f21a9c7'
+          `https://api.openweathermap.org/data/2.5/weather?q=Montreuil&units=metric&lang=fr&appid=${WEATHER_API_KEY}`
         ).then((response) => {
           this.isDay = this.returnIsDay(response.data.sys.sunrise, response.data.sys.sunset)
           this.weatherTemp = response.data.main.temp.toFixed()
