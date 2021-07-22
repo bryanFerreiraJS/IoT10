@@ -1,5 +1,8 @@
 <template>
-  <div class='flex'>
+  <div v-if='windowWidthUnderLimit' class='h-screen w-screen flex items-center justify-center'>
+    <span class='font-bold text-2xl'>Version mobile pas encore disponible.</span>
+  </div>
+  <div v-else class='flex'>
     <Navbar/>
     <main class='ml-24 px-14 py-11 m-auto'>
       <h1 class='font-medium text-gray-400 mb-5'>{{ $route.meta.title }}</h1>
@@ -13,6 +16,11 @@ import { defineComponent } from 'vue'
 import Navbar from '@/components/Navbar.vue'
 
 export default defineComponent({
+  data() {
+    return {
+      windowWidthUnderLimit: window.innerWidth < 890
+    }
+  },
   components: {
     Navbar
   }
