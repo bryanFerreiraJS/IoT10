@@ -18,7 +18,7 @@ import Navbar from '@/components/Navbar.vue'
 export default defineComponent({
   data() {
     return {
-      windowWidthUnderLimit: window.innerWidth <= 889
+      windowWidthUnderLimit: window.innerWidth < 890
     }
   },
   components: {
