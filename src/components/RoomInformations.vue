@@ -123,72 +123,82 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.container{
-    width: 100%;
+.container {
+  width: 100%;
 }
-.disclosure-close{
+
+.disclosure-close {
   height: 4.5rem;
 }
-.disclosure-temperature{
+
+.disclosure-temperature {
   border-left: 1px solid #c3c3c3;
 }
-.MoyenneQuotCol2{
+
+.MoyenneQuotCol2 {
   flex-direction: column;
 }
-.clearMargin{
+
+.clearMargin {
   margin: 0;
 }
-.chevron-seemore{
+
+.chevron-seemore {
   display: none;
 }
+
 @media screen and (max-width: 1180px) {
-  .display-none{
+  .display-none {
     display: none;    
   }
-  .container{
+
+  .container {
     width: 95%;
   }
+
   .data-quot {
     margin-left: 0.50rem;
     font-size: 1.875rem;
   }
+
   .moyenneQuotTemp {
     flex-direction: column;  
   }
-  .MoyenneQuotCol, .MoyenneQuotCol2{
+
+  .MoyenneQuotCol, .MoyenneQuotCol2 {
     justify-content: center;
     align-items: center;
   }
+
   .MoyenneQuotCol2{
     padding: 1.25rem 0 0 0;
     border: none;
   }
 }
+
 @media screen and (max-width: 830px) {
   .disclosure-close span {
     font-size: 1rem;
   }
-  .disclosure-temperature{
+
+  .disclosure-temperature {
     padding: 0;
     border: 0  
   }
-  .button-seemore{
+
+  .button-seemore {
     display: none;
   }
-  .chevron-seemore{
+
+  .chevron-seemore {
     display: block;
   }
-  .listMoyenneQuot{
+
+  .listMoyenneQuot, .performance {
     flex-direction: column;
   }
-  .listMoyenneQuot div{
-    margin: 1rem 0 0 0;
-    border-radius: 1rem;
-  }
-  .performance{
-    flex-direction: column;
-  }
-  .performance div{
+
+  .listMoyenneQuot div, .performance div {
     margin: 1rem 0 0 0;
     border-radius: 1rem;
   }
