@@ -1,5 +1,5 @@
 <template>
-<div id="budget" class="h-screen">
+<div id='budget' class='h-screen'>
   <Saving />
   <Chart
     class='h-3/5'
