@@ -176,7 +176,7 @@ export default defineComponent({
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 890px) {
   .disclosure-close span {
     font-size: 1rem;
   }
