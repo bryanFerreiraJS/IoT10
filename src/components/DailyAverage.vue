@@ -43,64 +43,64 @@ export default defineComponent({})
 </script>
 
 <style scoped>
+.listMoyenneQuot{
+  display: flex;
+  flex-direction: row;
+}
+
+.moyenneQuotTemp, .moyenneQuotCons{
+  margin: 0 0.5rem;
+}
+
+.moyenneQuotConsSem{
+  width: 66.666667%;
+}
+
+.MoyenneQuotCol{
+  flex-direction: row;
+}
+
+.MoyenneQuotCol2{
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1552px) {
   .listMoyenneQuot{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .moyenneQuotTemp, .moyenneQuotCons{
-    margin: 0 0.5rem;
-  }
-
-  .moyenneQuotConsSem{
-    width: 66.666667%;
-  }
-
-  .MoyenneQuotCol{
-    flex-direction: row;
-  }
-
-  .MoyenneQuotCol2{
     flex-direction: column;
   }
-
-  @media screen and (max-width: 1552px) {
-    .listMoyenneQuot{
-      flex-direction: column;
-    }
-    .moyenneQuotTemp{
-      margin: 0;
-    }
-    .moyenneQuotCons{
-      margin: 1rem 0 0 0;
-    }
-    .moyenneQuotConsSem{
-      width: 100%;
-    }
+  .moyenneQuotTemp{
+    margin: 0;
   }
-
-  @media screen and (max-width: 830px) {
-    .listMoyenneQuot{
-      flex-direction: column;
-    }
-    .moyenneQuotTemp{
-      margin-right: 0;
-    }
-    .moyenneQuotCons{
-      margin-left: 0;
-      margin-top: 1rem;
-    }
-    .moyenneQuotConsSem{
-      width: 100%;
-    }
-    .MoyenneQuotCol{
-      flex-direction: column;
-    }
-    .clearMargin{
-      margin: 0;
-    }
-    .MoyenneQuotCol2{
-      align-items: center;
-    }
+  .moyenneQuotCons{
+    margin: 1rem 0 0 0;
   }
+  .moyenneQuotConsSem{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .listMoyenneQuot{
+    flex-direction: column;
+  }
+  .moyenneQuotTemp{
+    margin-right: 0;
+  }
+  .moyenneQuotCons{
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .moyenneQuotConsSem{
+    width: 100%;
+  }
+  .MoyenneQuotCol{
+    flex-direction: column;
+  }
+  .clearMargin{
+    margin: 0;
+  }
+  .MoyenneQuotCol2{
+    align-items: center;
+  }
+}
 </style>
