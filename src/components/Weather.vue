@@ -40,7 +40,7 @@ export default {
       return dateLocale
     },
     returnIsDay(sunrise, sunset) {
-      const now = Date.now() / 100000
+      const now = Date.now() / 1000
       return (now >= sunrise && now <= sunset) ? true : false
     }
   },
