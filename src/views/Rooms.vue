@@ -24,13 +24,13 @@ export default defineComponent({
         'isOpen': false,
         'nbPeoples': 0,
         'temperature': 18,
-        'lightIntensity': 'regular'
+        'lightIntensity': 'off'
       },{
         'id': 3,
         'isOpen': false,
         'nbPeoples': 0,
         'temperature': 24,
-        'lightIntensity': 'high'
+        'lightIntensity': 'off'
       }]
     }
   },
