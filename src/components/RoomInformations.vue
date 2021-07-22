@@ -6,14 +6,14 @@
           @click='isOpen = !isOpen' class='w-full flex justify-between items-center text-black-600 px-8 text-sm font-medium text-left focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 disclosure-close'
         >
           <img src='@/assets/images/location_boxed.png'>
-          <span class='text-2xl font-bold'>
+          <span class='w-24 text-2xl font-bold'>
             Salle {{ room.id }}
           </span>
           <div class='w-40 flex flex-row items-center center'>
             <img :src="`src/assets/images/${room.isOpen ? 'sun' : 'moon'}.png`">
             <span class='text-sm ml-4 text-gray-400 display-none'>{{ room.isOpen ? "en cours d'utilisation" : 'inutilisé' }}</span>
           </div>
-          <div class='flex h-full pl-9 flex-row items-center disclosure-temperature'>
+          <div class='w-64 flex h-full pl-9 flex-row items-center disclosure-temperature'>
             <img src='@/assets/images/temperature.png'>
             <span class='text-lg ml-4'>
               <span class='display-none'>Température : </span>
@@ -27,7 +27,7 @@
             </span>
           </div>
           <span 
-            class='px-3 py-2 text-white text-sm bg-purple-600 rounded-lg text-center button-seemore'>
+            class='w-28 px-3 py-2 text-white text-sm bg-purple-600 rounded-lg text-center button-seemore'>
             {{ isOpen ? 'voir moins' : 'voir plus' }}
           </span>
           <ChevronUpIcon
@@ -129,6 +129,8 @@ export default defineComponent({
           return 'moyenne'
         case 'high':
           return 'élevé'
+        case 'off':
+          return 'éteinte'
       }
       return `${value} ${unit}`
     }
